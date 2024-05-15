@@ -181,23 +181,23 @@
         <!-- Add more sections here -->
     </div>
 </body>
-<script>
-// JavaScript to add interactive elements or animations
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Example: Animate elements on scroll
-    window.addEventListener('scroll', () => {
-        const sections = document.querySelectorAll('.section');
-        const scrollPosition = window.scrollY + window.innerHeight;
+    <script>
+        // JavaScript for interactive elements or animations
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Animate elements on scroll
+            window.addEventListener('scroll', () => {
+                const sections = document.querySelectorAll('.section');
+                const scrollPosition = window.scrollY + window.innerHeight;
 
-        sections.forEach((section) => {
-            const sectionPosition = section.offsetTop + section.offsetHeight / 2;
-            if (scrollPosition >= sectionPosition) {
-                section.style.opacity = '1';
-                section.style.transform = 'translateX(0)';
-            }
+                sections.forEach((section) => {
+                    const sectionPosition = section.offsetTop + section.offsetHeight / 2;
+                    if (scrollPosition >= sectionPosition) {
+                        section.style.opacity = '1';
+                        section.style.transform = 'translateX(0)';
+                    }
+                });
+            });
         });
-    });
-});
-</script>
+    </script>
 
 </html>
