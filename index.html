@@ -6,29 +6,55 @@
     <title>Your Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
         }
 
-        h1 {
-            color: #333;
+        h1, h2 {
+            color: #27ae60; /* A fresh green color */
         }
 
         p {
-            color: #666;
+            color: #555;
+            line-height: 1.6;
         }
 
-        /* Add more styles for other sections (skills, experience, etc.) */
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .skills-list, .experience-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list li, .experience-list li {
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #27ae60; /* Matching the headings color */
+        }
+
+        /* Add more styles as needed */
     </style>
 </head>
 <body>
@@ -36,13 +62,20 @@
         <h1>Isht Gupta</h1>
         <p>Security Consultant</p>
         <hr>
-        <h2>About Me</h2>
-        <p>👋 Hello! I’m Isht Gupta, a passionate IT professional with a focus on cybersecurity and IAM. Here’s a bit about me:</p>
-        <h2>Background</h2>
-        <p>I have a strong background in computer science and information security. My journey began with a fascination for how digital identities are managed and secured across systems.</p>
-<h2>Interests</h2>
-<p>Apart from IAM, I enjoy exploring cloud security, ethical hacking, and staying up-to-date with industry trends.
-Feel free to connect with me—I’d love to discuss IAM, cybersecurity, or anything tech-related!</p>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>👋 Hello! I’m Isht Gupta, a passionate IT professional with a focus on cybersecurity and IAM. Here’s a bit about me:</p>
+        </div>
+        <div class="section">
+            <h2>Background</h2>
+            <p>I have a strong background in computer science and information security. My journey began with a fascination for how digital identities are managed and secured across systems.</p>
+        </div>
+        <div class="section">
+            <h2>Interests</h2>
+            <p>Apart from IAM, I enjoy exploring cloud security, ethical hacking, and staying up-to-date with industry trends.
+            Feel free to connect with me—I’d love to discuss IAM, cybersecurity, or anything tech-related!</p>
+        </div>
+        <!-- Add more sections here -->
     </div>
 </body>
 </html>
