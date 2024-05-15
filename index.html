@@ -6,7 +6,7 @@
     <title>Isht Gupta</title>
         <!-- Add Font Awesome CDN link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <style>
+       <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
         body {
@@ -16,23 +16,9 @@
             margin: 0;
             padding: 0;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-              .job-title { font-weight: bold; }
-  .company { font-style: italic; }
-  ul { list-style-type: none; }
-  li { margin-bottom: 5px; }
+            scroll-behavior: smooth;
         }
-          {
-    scroll-behavior: smooth;
-}
-/* Improve the floating animation */
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
+
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -62,30 +48,26 @@
             margin-bottom: 20px;
         }
 
-/* Add a hover effect to sections for interactivity */
-.section:hover {
-    background-color: #f7f7f7;
-    border-left: 5px solid #2ecc71;
-}
-
-/* Style the icons within the sections */
-.section i {
-    margin-right: 10px;
-    color: #27ae60;
-    transition: background-color 0.3s, border-left 0.3s;
-}
+        .section:hover {
+            background-color: #f7f7f7;
+            border-left: 5px solid #2ecc71;
         }
 
-        /* Add a footer with a subtle animation */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #27ae60;
-    color: white;
-}
-footer:hover {
-    background-color: #2ecc71;
-}
+        .section i {
+            margin-right: 10px;
+            color: #27ae60;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #27ae60;
+            color: white;
+        }
+
+        footer:hover {
+            background-color: #2ecc71;
+        }
 
         .skills-list, .experience-list {
             list-style-type: none;
@@ -97,46 +79,42 @@ footer:hover {
             margin-bottom: 10px;
             padding: 10px;
             border-left: 5px solid #27ae60;
-            transition: transform 0.2s ease-in-out;
         }
 
         .skills-list li:hover, .experience-list li:hover {
             transform: translateX(10px);
         }
 
-/* Top menu styles */
-        /* Sticky top menu styles */
-.top-menu {
-    background-color: #27ae60;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this */
-}
-.top-menu a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s, text-decoration 0.3s, transform 0.3s; /* Add this */
-}
+        .top-menu {
+            background-color: #27ae60;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+        }
 
-.top-menu a:hover {
-    background-color: #333;
-    color: white;
-    text-decoration: underline;
-    transform: scale(1.1); /* Add this */
-}
-        /* Icon styles */
+        .top-menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .top-menu a:hover {
+            background-color: #333;
+            color: white;
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
         .top-menu i {
             margin-right: 8px;
         }
 
-        /* Responsive layout for the top menu */
         @media screen and (max-width: 600px) {
             .top-menu a {
                 float: none;
@@ -145,7 +123,15 @@ footer:hover {
             }
         }
 
-        /* Add more styles as needed */
+        /* Keyframes for the floating animation */
+        @keyframes floatAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -176,21 +162,22 @@ footer:hover {
             Feel free to connect with me—I’d love to discuss IAM, cybersecurity, or anything tech-related!</p>
         </div>
         <section class="section">
-  <div class="job-title">IT Security and Compliance Analyst</div>
-  <div class="company">at Birlasoft – (November 2021 – Present)</div>
-  <ul>
-    <li>Integrating SAML Applications and OIDC Applications</li>
-    <li>Integrating on-premises applications with Okta Access Gateway (OAG)</li>
-    <li>Developing Login pages with OKTA Custom Sign-in Widget</li>
-    <li>Installing AD and LDAP Agents</li>
-    <li>MFA setup, Enabling Adaptive MFA, Sign-on policies setup, Importing Users, Creating Group rules, Network zones and Okta Expression Language</li>
-    <li>OKTA API implementation and SCIM implementation</li>
-    <li>Creation of Sign-on Policies and Password Polices</li>
-    <li>Org2Org implementation, User Provisioning and Password Sync</li>
-    <li>Business requirements gathering, analysis and preparing Design documents</li>
-    <li>Automation of custom reports</li>
-  </ul>
-</section>
+            <h2>Professional Experience</h2>
+            <div class="job-title">IT Security and Compliance Analyst</div>
+            <div class="company">at Birlasoft – (November 2021 – Present)</div>
+            <ul class="experience-list">
+                <li>Integrating SAML Applications and OIDC Applications</li>
+                <li>Integrating on-premises applications with Okta Access Gateway (OAG)</li>
+                <li>Developing Login pages with OKTA Custom Sign-in Widget</li>
+                <li>Installing AD and LDAP Agents</li>
+                <li>MFA setup, Enabling Adaptive MFA, Sign-on policies setup, Importing Users, Creating Group rules, Network zones and Okta Expression Language</li>
+                <li>OKTA API implementation and SCIM implementation</li>
+                <li>Creation of Sign-on Policies and Password Polices</li>
+                <li>Org2Org implementation, User Provisioning and Password Sync</li>
+                <li>Business requirements gathering, analysis and preparing Design documents</li>
+                <li>Automation of custom reports</li>
+            </ul>
+        </section>
         <!-- Add more sections here -->
     </div>
 </body>
