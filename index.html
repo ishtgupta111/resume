@@ -82,9 +82,13 @@
         }
 
 /* Top menu styles */
+        /* Sticky top menu styles */
         .top-menu {
             background-color: #27ae60;
             overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .top-menu a {
@@ -121,7 +125,7 @@
     </style>
 </head>
 <body>
-        <!-- Top menu -->
+    <!-- Sticky top menu -->
     <div class="top-menu">
         <a href="#home"><i class="fas fa-home"></i>Home</a>
         <a href="#about"><i class="fas fa-user"></i>About Me</a>
