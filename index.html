@@ -15,7 +15,17 @@
             padding: 0;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
-
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -25,6 +35,7 @@
             border-radius: 10px;
             overflow: hidden;
             border-top: 5px solid #27ae60;
+            animation: floatAnimation 3s ease-in-out infinite;
         }
 
         h1, h2 {
